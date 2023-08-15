@@ -14,11 +14,25 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+
+    /* Plugins */
     "plugins": [
       {
         "name": "next"
+      },
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "dashes",
+          "customMatcher": "\\.module\\.scss$"
+        }
       }
     ],
+
+    /* Base Url */
+    "baseUrl": ".",
+
+    /* Aliases */
     "paths": {
       "@/*": ["./src/*"]
     }

@@ -1,0 +1,11 @@
+@use "settings/typography" as typography;
+
+html {
+    font-size: #{typography.$font-size-root};
+}
+
+body {
+    font-size: #{typography.$font-size-base};
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}

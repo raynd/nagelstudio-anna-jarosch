@@ -1,0 +1,12 @@
+$suffix: color;
+
+@function color-var($args...) {
+  @if length($args) == 2 {
+    @return var(--#{$suffix}-#{first($args)}-#{last($args)});
+  } @else {
+    @if length($args) == 1 {
+      @return var(--#{$suffix}-#{$args});
+    }
+  }
+  @debug ("expected 1 or 2 arguments");
+}

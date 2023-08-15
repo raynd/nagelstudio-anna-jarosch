@@ -1,0 +1,16 @@
+@use 'sass:map';
+@use 'settings/typography';
+@use 'tools/mixins/typeface' as *;
+@use 'tools/functions/helpers';
+
+$typeFaces: typography.$typeFaces;
+
+@each $map in $typeFaces {
+	$name: map.keys($map);
+	$typefaceMap: map.get($map, #{$name});
+	$cssClass: map.get($typefaceMap, cssClass);
+
+	.#{$cssClass} {
+		@include typeface(#{$name});
+	}
+}

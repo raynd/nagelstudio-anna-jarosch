@@ -1,0 +1,29 @@
+@use 'sass:map';
+@use 'sass:math';
+
+@use 'settings/spacings';
+@use 'settings/breakpoints';
+@use 'tools/functions/helpers';
+@use 'tools/mixins/mq' as *;
+
+// breakpoints map
+$breakpoints: breakpoints.$breakpoints;
+
+// stages map (vps, vpm,...)
+$stages: map.keys($breakpoints);
+
+// spacings map
+$keys: map.keys(spacings.$spacings);
+
+@mixin make-space() {
+	@each $key in $keys {
+		@each $stage in $stages {
+			@include mq($stage) {
+				$responsive-spaces: map.get(spacings.$spacings, $key);
+				$space: map.get($responsive-spaces, $stage);
+
+				@debug ($space);
+			}
+		}
+	}
+}

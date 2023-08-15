@@ -1,0 +1,51 @@
+spacings:
+  s-10:
+    vps: 64px
+    vpm: 72px
+    vpl: 88px
+    vpxl: 88px
+  s-9:
+    vps: 56px
+    vpm:  64px
+    vpl:  72px
+    vpxl: 72px
+  s-8:
+    vps: 48px
+    vpm:  56px
+    vpl:  64px
+    vpxl: 64px
+  s-7:
+    vps: 32px
+    vpm:  40px
+    vpl:  48px
+    vpxl: 48px
+  s-6:
+    vps: 24px
+    vpm:  24px
+    vpl:  32px
+    vpxl: 32px
+  s-5:
+    vps: 20px
+    vpm:  20px
+    vpl:  24px
+    vpxl: 24px
+  s-4:
+    vps: 16px
+    vpm:  16px
+    vpl:  16px
+    vpxl: 16px
+  s-3:
+    vps: 12px
+    vpm:  12px
+    vpl:  12px
+    vpxl: 12px
+  s-2:
+    vps: 8px
+    vpm:  8px
+    vpl:  8px
+    vpxl: 8px
+  s-1:
+    vps: 4px
+    vpm:  4px
+    vpl:  4px
+    vpxl: 4px

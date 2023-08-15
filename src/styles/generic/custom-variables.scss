@@ -1,0 +1,4 @@
+@use '../settings/colors' as *;
+@use '../tools/mixins/custom-variables' as *;
+
+@include custom-variables(':root', $colors);

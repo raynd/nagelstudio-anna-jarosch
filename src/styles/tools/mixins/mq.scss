@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use 'settings/breakpoints' as *;
+
+$media-direction-default: $media-direction-default;
+$stage-default: $stage-default;
+
+@mixin mq($breakpoint, $direction: $media-direction-default) {
+	@if map.has-key($breakpoints, $breakpoint) {
+		@if ($direction == 'min') {
+			@if $breakpoint == $stage-default {
+				@content;
+			} @else {
+				@media (#{$direction}-width: #{map.get($breakpoints, $breakpoint)}) {
+					@content;
+				}
+			}
+		}
+	}
+}

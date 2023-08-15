@@ -1,0 +1,165 @@
+typography:
+  root: 62.5%
+  base: 1.6rem
+  typeSizes:
+    small:
+      vps:
+        size: 1.2rem
+        line-height: 1.92rem
+      vpm:
+        size: 1.2rem
+        line-height: 1.92rem
+      vpl:
+        size: 1.2rem
+        line-height: 1.92rem
+      vpxl:
+        size: 1.2rem
+        line-height: 1.92rem
+    default:
+      vps:
+        size: 1.6rem
+        line-height: 2.56rem
+      vpm:
+        size: 1.6rem
+        line-height: 2.56rem
+      vpl:
+        size: 1.6rem
+        line-height: 2.56rem
+      vpxl:
+        size: 1.6rem
+        line-height: 2.56rem
+    t1:
+      vps:
+        size: 3rem
+        line-height: 4.05rem
+      vpm:
+        size: 4rem
+        line-height: 5.4rem
+      vpl:
+        size: 6.4rem
+        line-height: 8.64rem
+      vpxl:
+        size: 6.4rem
+        line-height: 8.64rem
+    t2:
+      vps:
+        size: 2.8rem
+        line-height: 3.78rem
+      vpm:
+        size: 3.4rem
+        line-height: 4.59rem
+      vpl:
+        size: 3.8rem
+        line-height: 5.13rem
+      vpxl:
+        size: 3.8rem
+        line-height: 5.13rem
+    t3:
+      vps:
+        size: 2.8rem
+        line-height: 3.78rem
+      vpm:
+        size: 2.8rem
+        line-height: 3.78rem
+      vpl:
+        size: 3.2rem
+        line-height: 4.32rem
+      vpxl:
+        size: 3.2rem
+        line-height: 4.32rem
+    fact:
+      vps:
+        size: 1.2rem
+        line-height: 1.62rem
+      vpm:
+        size: 1.3rem
+        line-height: 1.755rem
+      vpl:
+        size: 1.4rem
+        line-height: 1.89rem
+      vpxl:
+        size: 1.4rem
+        line-height: 1.89rem
+    fact-large:
+      vps:
+        size: 1.6rem
+        line-height: 2.16rem
+      vpm:
+        size: 1.8rem
+        line-height: 2.43rem
+      vpl:
+        size: 2rem
+        line-height: 2.7rem
+      vpxl:
+        size: 2rem
+        line-height: 2.7rem
+    button:
+      vps:
+        size: 1.2rem
+        line-height: 1.62rem
+      vpm:
+        size: 1.2rem
+        line-height: 1.62rem
+      vpl:
+        size: 1.2rem
+        line-height: 1.62rem
+      vpxl:
+        size: 1.2rem
+        line-height: 1.62rem
+  typeFaces:
+    - headline-t1:
+        size: t1
+        cssClass: headline-t1
+        properties:
+          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 300
+    - headline-t2:
+        size: t2
+        cssClass: headline-t2
+        properties:
+          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 300
+    - headline-t3:
+        size: t3
+        cssClass: headline-t3
+        properties:
+          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 300
+    - default:
+        size: default
+        cssClass: default
+        properties:
+          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 400
+    - default-strong:
+        size: default
+        cssClass: default-strong
+        properties:
+          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 700
+    - default-italic:
+        size: default
+        cssClass: default-italic
+        properties:
+          font-family: ["Open Sans Italic", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 400
+    - small:
+        size: small
+        cssClass: small
+        properties:
+          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 400
+    - small-strong:
+        size: small
+        cssClass: small-strong
+        properties:
+          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 700
+    - button:
+        size: button
+        cssClass: button-text
+        properties:
+          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-weight: 700
+          letter-spacing: 1px;
+          text-transform: uppercase;

@@ -1,0 +1,15 @@
+@mixin custom-variables($el, $map) {
+  #{$el} {
+    @each $entry in $map {
+      @each $color-group, $color-values in $entry {
+        @each $key, $value in $color-values {
+          @if $key == "default" {
+            --color-#{"" + $color-group}: #{$value};
+          } @else {
+            --color-#{"" + $color-group}-#{$key}: #{$value};
+          }
+        }
+      }
+    }
+  }
+}
