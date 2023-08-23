@@ -4,3 +4,7 @@
 @use 'generic/typography/base';
 @use 'generic/typography/typefaces';
 @use 'generic/layout/spacings';
+
+body {
+  margin: 0;
+}
