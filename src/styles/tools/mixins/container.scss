@@ -1,7 +1,7 @@
 @use 'sass:map';
 @use 'sass:math';
 
-@use 'settings/spacings';
+@use 'settings/container';
 @use 'settings/breakpoints';
 @use 'tools/functions/helpers';
 @use 'tools/mixins/mq' as *;
@@ -13,16 +13,19 @@ $breakpoints: breakpoints.$breakpoints;
 $stages: map.keys($breakpoints);
 
 // spacings map
-$keys: map.keys(spacings.$spacings);
+$containers: map.keys(container.$container);
 
-@mixin make-space() {
-  @each $key in $keys {
+@mixin container() {
+  @each $container in $containers {
     @each $stage in $stages {
       @include mq($stage) {
-        $responsive-spaces: map.get(spacings.$spacings, $key);
-        $space: map.get($responsive-spaces, $stage);
+        $responsive-sizes: map.get(container.$container, $container);
+        $size: map.get($responsive-sizes, $stage);
 
-        @debug ($space);
+        .#{$container} {
+          width: #{$size};
+          margin: 0 auto;
+        }
       }
     }
   }

@@ -10,6 +10,14 @@ const nextConfig = {
       path.join(__dirname, '.stylite'),
       path.join(__dirname, 'src/styles'),
     ],
+    logger: {
+      warn: function (message) {
+        console.warn(message)
+      },
+      debug: function (message) {
+        console.log(message)
+      },
+    },
   },
 }
 
