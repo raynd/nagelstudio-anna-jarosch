@@ -1,7 +1,7 @@
-import React from 'react'
+import type { ChildrenType } from '@/types'
 
-function Container({ children }: { children: React.ReactNode }) {
-  return <div className="c1">{children}</div>
-}
+import React, { FunctionComponent as RFC } from 'react'
 
-export default Container
+export const Container: RFC<ChildrenType> = ({ children }) => (
+  <div className="c1">{children}</div>
+)

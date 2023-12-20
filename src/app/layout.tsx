@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 
-import Header from './components/Header'
-import Container from './components/Container'
+import { Header, Container, Hero } from '@/app/components'
 
 import '@/styles/index.scss'
 
@@ -19,6 +18,7 @@ export default function RootLayout({
     <html lang="de">
       <body>
         <Header />
+        <Hero />
         <Container>{children}</Container>
       </body>
     </html>

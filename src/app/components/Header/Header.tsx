@@ -1,10 +1,11 @@
-import React from 'react'
-import Logo from '@/app/components/Logo'
-import Container from '../Container'
+import type { ChildrenType } from '@/types'
+
+import React, { FunctionComponent as RFC } from 'react'
+import { Logo, Container } from '@/app/components'
 
 import { header } from './header.module.scss'
 
-function Header() {
+export const Header: RFC<ChildrenType> = () => {
   return (
     <header className={header}>
       <Container>
@@ -13,5 +14,3 @@ function Header() {
     </header>
   )
 }
-
-export default Header
