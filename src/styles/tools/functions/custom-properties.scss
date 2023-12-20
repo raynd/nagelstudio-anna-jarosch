@@ -8,5 +8,5 @@ $suffix: color;
       @return var(--#{$suffix}-#{$args});
     }
   }
-  @debug ("expected 1 or 2 arguments");
+  @debug ('expected 1 or 2 arguments');
 }

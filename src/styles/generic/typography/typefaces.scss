@@ -6,11 +6,11 @@
 $typeFaces: typography.$typeFaces;
 
 @each $map in $typeFaces {
-	$name: map.keys($map);
-	$typefaceMap: map.get($map, #{$name});
-	$cssClass: map.get($typefaceMap, cssClass);
+  $name: map.keys($map);
+  $typefaceMap: map.get($map, #{$name});
+  $cssClass: map.get($typefaceMap, cssClass);
 
-	.#{$cssClass} {
-		@include typeface(#{$name});
-	}
+  .#{$cssClass} {
+    @include typeface(#{$name});
+  }
 }

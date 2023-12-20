@@ -1,20 +1,20 @@
 @use 'sass:map';
 
 @function get-typemap($typeFaces, $type) {
-	/** @if map.has-key($typeFaces, $type) {
+  /** @if map.has-key($typeFaces, $type) {
 		@return map.get($typeFaces, $type);
 	} @else {
 		@warn "Unknown value '#{$type}' in variable $type  - could not found in typeFaces map";
 	} */
 
-	/** declared typeFaces as yaml array instead of yaml list
+  /** declared typeFaces as yaml array instead of yaml list
 	 */
-	@each $map in $typeFaces {
-		@if map.has-key($map, $type) {
-			@return map.get($map, $type);
-		}
-	}
+  @each $map in $typeFaces {
+    @if map.has-key($map, $type) {
+      @return map.get($map, $type);
+    }
+  }
 
-	@warn "Unknown value '#{$type}' in variable $type  - could not found in typeFaces map";
-	@return null;
+  @warn "Unknown value '#{$type}' in variable $type  - could not found in typeFaces map";
+  @return null;
 }

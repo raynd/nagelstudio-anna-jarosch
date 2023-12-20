@@ -19,45 +19,45 @@ $typeSizes: typography.$typeSizes;
 $typeFaces: typography.$typeFaces;
 
 @mixin typeProperties($typeMap) {
-	$properties: map.get($typeMap, properties);
+  $properties: map.get($typeMap, properties);
 
-	@each $property, $value in $properties {
-		#{$property}: #{$value};
-	}
+  @each $property, $value in $properties {
+    #{$property}: #{$value};
+  }
 }
 
 @mixin typeSize($typeName, $stage) {
-	// get map
-	$typeMap: helpers.get-typemap($typeFaces, $typeName);
+  // get map
+  $typeMap: helpers.get-typemap($typeFaces, $typeName);
 
-	// get size reference
-	$typeSizeReference: map.get($typeMap, 'size');
+  // get size reference
+  $typeSizeReference: map.get($typeMap, 'size');
 
-	// get map from typeSizes
-	$size: map.get($typeSizes, $typeSizeReference);
+  // get map from typeSizes
+  $size: map.get($typeSizes, $typeSizeReference);
 
-	// get values as map
-	$values: (map.get($size, $stage));
+  // get values as map
+  $values: (map.get($size, $stage));
 
-	// extract values from map
-	$font-size: (map.get($values, 'size'));
-	$line-height: (map.get($values, 'line-height'));
+  // extract values from map
+  $font-size: (map.get($values, 'size'));
+  $line-height: (map.get($values, 'line-height'));
 
-	font-size: #{$font-size};
-	line-height: #{$line-height};
+  font-size: #{$font-size};
+  line-height: #{$line-height};
 }
 
 @mixin typeface($typeName) {
-	$typeMap: helpers.get-typemap($typeFaces, $typeName);
+  $typeMap: helpers.get-typemap($typeFaces, $typeName);
 
-	@if ($typeMap != null) {
-		@each $stage in $stages {
-			@include mq($stage) {
-				@include typeSize($typeName, $stage);
-				@include typeProperties($typeMap);
-			}
-		}
-	} @else {
-		@warn "Mixin font was unable to compile";
-	}
+  @if ($typeMap != null) {
+    @each $stage in $stages {
+      @include mq($stage) {
+        @include typeSize($typeName, $stage);
+        @include typeProperties($typeMap);
+      }
+    }
+  } @else {
+    @warn "Mixin font was unable to compile";
+  }
 }

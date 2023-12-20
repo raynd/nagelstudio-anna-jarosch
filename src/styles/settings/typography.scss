@@ -1,10 +1,10 @@
-@forward ".stylite/typography.yaml";
+@forward '.stylite/typography.yaml';
 
-@use "sass:map";
-@use ".stylite/typography.yaml" as *;
+@use 'sass:map';
+@use '.stylite/typography.yaml' as *;
 
-$font-size-root: #{map.get($typography, "root")};
-$font-size-base: #{map.get($typography, "base")};
+$font-size-root: #{map.get($typography, 'root')};
+$font-size-base: #{map.get($typography, 'base')};
 
-$typeSizes: map.get($typography, "typeSizes");
-$typeFaces: map.get($typography, "typeFaces");
+$typeSizes: map.get($typography, 'typeSizes');
+$typeFaces: map.get($typography, 'typeFaces');

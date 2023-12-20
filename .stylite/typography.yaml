@@ -111,55 +111,55 @@ typography:
         size: t1
         cssClass: headline-t1
         properties:
-          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 300
     - headline-t2:
         size: t2
         cssClass: headline-t2
         properties:
-          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 300
     - headline-t3:
         size: t3
         cssClass: headline-t3
         properties:
-          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 300
     - default:
         size: default
         cssClass: default
         properties:
-          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 400
     - default-strong:
         size: default
         cssClass: default-strong
         properties:
-          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 700
     - default-italic:
         size: default
         cssClass: default-italic
         properties:
-          font-family: ["Open Sans Italic", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans Italic', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 400
     - small:
         size: small
         cssClass: small
         properties:
-          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 400
     - small-strong:
         size: small
         cssClass: small-strong
         properties:
-          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 700
     - button:
         size: button
         cssClass: button-text
         properties:
-          font-family: ["Open Sans", "Helvetica", "Arial", "sans-serif"]
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 700
           letter-spacing: 1px;
           text-transform: uppercase;
