@@ -2,6 +2,5 @@
   "semi": false,
   "singleQuote": true,
   "tabWidth": 2,
-  "useTabs": false,
-  "editorconfig": true
+  "useTabs": false
 }
