@@ -1,8 +1,9 @@
-import { Hero, Container, Grid, Teaser } from '@/app/components'
+import { Container, Footer, Grid, Header, Hero, Teaser } from '@/app/components'
 
 export default function Home() {
   return (
     <main>
+      <Header />
       <Hero />
       <Container>
         <h1 className="headline-t1">Nagelstudio Anna Jarosch</h1>
@@ -12,6 +13,7 @@ export default function Home() {
           <Teaser />
         </Grid>
       </Container>
+      <Footer />
     </main>
   )
 }

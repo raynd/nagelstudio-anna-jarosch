@@ -22,6 +22,7 @@ $keys: map.keys(spacings.$spacings);
         $responsive-spaces: map.get(spacings.$spacings, $key);
         $space: map.get($responsive-spaces, $stage);
 
+        @debug ('$space');
         @debug ($space);
       }
     }

@@ -1,8 +1,6 @@
 export default function Styleguide() {
   return (
     <main>
-      <h1 className="headline-t1">Nagelstudio Anna Jarosch</h1>
-      <hr />
       <h1 className="headline-t1">
         H1 <br />
         ABCDEFG abcdefg

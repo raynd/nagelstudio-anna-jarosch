@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 
-import { Header, Footer } from '@/app/components'
-
 import '@/styles/index.scss'
 
 export const metadata: Metadata = {
@@ -16,11 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
