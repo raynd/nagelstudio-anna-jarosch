@@ -28,6 +28,19 @@ typography:
       vpxl:
         size: 1.6rem
         line-height: 2.56rem
+    large:
+      vps:
+        size: 1.8rem
+        line-height: 2.56rem
+      vpm:
+        size: 1.8rem
+        line-height: 2.56rem
+      vpl:
+        size: 1.8rem
+        line-height: 2.56rem
+      vpxl:
+        size: 1.8rem
+        line-height: 2.56rem
     t1:
       vps:
         size: 3rem
@@ -67,32 +80,6 @@ typography:
       vpxl:
         size: 3.2rem
         line-height: 4.32rem
-    fact:
-      vps:
-        size: 1.2rem
-        line-height: 1.62rem
-      vpm:
-        size: 1.3rem
-        line-height: 1.755rem
-      vpl:
-        size: 1.4rem
-        line-height: 1.89rem
-      vpxl:
-        size: 1.4rem
-        line-height: 1.89rem
-    fact-large:
-      vps:
-        size: 1.6rem
-        line-height: 2.16rem
-      vpm:
-        size: 1.8rem
-        line-height: 2.43rem
-      vpl:
-        size: 2rem
-        line-height: 2.7rem
-      vpxl:
-        size: 2rem
-        line-height: 2.7rem
     button:
       vps:
         size: 1.2rem
@@ -125,6 +112,18 @@ typography:
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 300
+    - large:
+        size: large
+        cssClass: large
+        properties:
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-weight: 400
+    - large-strong:
+        size: large
+        cssClass: large-strong
+        properties:
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-weight: 700
     - default:
         size: default
         cssClass: default

@@ -15,6 +15,14 @@ export default function Styleguide() {
         H3 <br />
         ABCDEFG abcdefg
       </h3>
+      <p className="large">
+        large <br />
+        ABCDEFG abcdefg
+      </p>
+      <p className="large-strong">
+        large-strong <br />
+        ABCDEFG abcdefg
+      </p>
       <p className="default">
         default <br />
         ABCDEFG abcdefg
