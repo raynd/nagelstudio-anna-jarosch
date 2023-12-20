@@ -1,50 +1,64 @@
-export default function Styleguide() {
+import { getStyleguideDataTypography } from '@/app/utils'
+
+type TObject = {
+  [key: string]: string
+}
+
+type TData = {
+  [key: string]: TObject
+}
+
+async function getData() {
+  const data: TData[] = await getStyleguideDataTypography()
+  return data
+}
+
+export default async function Styleguide() {
+  const data: TData[] = await getData()
+
   return (
     <main>
-      <h1 className="headline-t1">
-        H1 <br />
-        ABCDEFG abcdefg
-      </h1>
-      <h2 className="headline-t2">
-        H2 <br />
-        ABCDEFG abcdefg
-      </h2>
-      <h3 className="headline-t3">
-        H3 <br />
-        ABCDEFG abcdefg
-      </h3>
-      <p className="large">
-        large <br />
-        ABCDEFG abcdefg
-      </p>
-      <p className="large-strong">
-        large-strong <br />
-        ABCDEFG abcdefg
-      </p>
-      <p className="default">
-        default <br />
-        ABCDEFG abcdefg
-      </p>
-      <p className="default-strong">
-        default - strong <br />
-        ABCDEFG abcdefg
-      </p>
-      <p className="default-italic">
-        default italic <br />
-        ABCDEFG abcdefg
-      </p>
-      <p className="small">
-        small <br />
-        ABCDEFG abcdefg
-      </p>
-      <p className="small-strong">
-        small strong <br />
-        ABCDEFG abcdefg
-      </p>
-      <p className="button-text">
-        button text <br />
-        ABCDEFG abcdefg
-      </p>
+      {data.map((record, index) => {
+        const key = Object.keys(record)[0]
+        const { cssClass, size } = record[key]
+
+        return (
+          <div key={index}>
+            <p className="default-strong">{key}</p>
+            <table>
+              <thead>
+                <tr>
+                  <td>
+                    <span className="small">name</span>
+                  </td>
+                  <td>
+                    <span className="small">className</span>
+                  </td>
+                  <td>
+                    <span className="small">size</span>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span className="small-strong">{key}</span>
+                  </td>
+                  <td>
+                    <span className="small-strong">{cssClass}</span>
+                  </td>
+                  <td>
+                    <span className="small-strong">{size}</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p className={cssClass}>
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+            </p>
+          </div>
+        )
+      })}
     </main>
   )
 }
