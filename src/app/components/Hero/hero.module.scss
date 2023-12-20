@@ -1,5 +1,24 @@
+@use 'tools/mixins/mq' as *;
+
 .hero {
-  background: violet;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  height: 400px;
+
+  @include mq(vpm) {
+    height: 400px;
+  }
+
+  @include mq(vpl) {
+    height: 500px;
+  }
+
+  @include mq(vpxl) {
+    height: 600px;
+  }
+
+  > img {
+    object-fit: cover;
+  }
 }

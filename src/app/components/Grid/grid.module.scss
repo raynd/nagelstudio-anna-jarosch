@@ -1,0 +1,11 @@
+@use 'tools/mixins/mq' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 32px;
+  @include mq(vpl) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+  }
+}

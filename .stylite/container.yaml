@@ -2,6 +2,6 @@ container:
   c1:
     vps: 100%
     vpm: 100%
-    vpl: 900px
-    vpxl: 1200px
+    vpl: 90%
+    vpxl: 1400px
 

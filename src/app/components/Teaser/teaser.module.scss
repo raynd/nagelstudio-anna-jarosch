@@ -1,0 +1,17 @@
+@use 'tools/mixins/mq' as *;
+
+.teaser {
+  align-items: center;
+  background: var(--color-lightgray-100);
+  display: flex;
+  aspect-ratio: 16/9;
+  width: 100%;
+
+  @include mq(vpl) {
+    align-items: center;
+    background: var(--color-lightgray-100);
+    display: flex;
+    aspect-ratio: 1/1;
+    width: 100%;
+  }
+}
