@@ -1,0 +1,9 @@
+.typeface-size {
+  margin: 0 0 1.8rem 0;
+  > span:first-of-type {
+    color: var(--color-darkgray-100);
+    + span {
+      color: var(--color-lightgray-140);
+    }
+  }
+}

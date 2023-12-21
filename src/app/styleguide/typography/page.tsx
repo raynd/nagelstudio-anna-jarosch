@@ -53,18 +53,18 @@ export default async function Styleguide() {
                 <tbody>
                   <tr>
                     <td>
-                      <span className="minion-strong">{name}</span>
+                      <span className="minion-medium">{name}</span>
                     </td>
                     <td>
-                      <span className="minion-strong">{cssClass}</span>
+                      <span className="minion-medium">{cssClass}</span>
                     </td>
                     <td>
-                      <span className="minion-strong">{size}</span>
+                      <span className="minion-medium">{size}</span>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <p className={`brevier-strong`}>Description</p>
+              <p className="brevier-strong">Description</p>
               <p className={`body-copy`}>{description}</p>
             </div>
             <div>

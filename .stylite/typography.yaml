@@ -139,15 +139,18 @@ typography:
         name: Canon
         description: Hero or page title
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
+
     - trafalgar:
         size: trafalgar
         cssClass: trafalgar
         name: Trafalgar
         description: Article title or section header
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
     - paragon:
         size: paragon
@@ -155,7 +158,8 @@ typography:
         name: Paragon
         description: Primary headline
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
     - double-pica:
         size: double-pica
@@ -163,7 +167,8 @@ typography:
         name: Double Pica
         description: Secondary headline
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
     - great-primer:
         size: great-primer
@@ -171,7 +176,8 @@ typography:
         name: Great Primer
         description: Headline title or subtitle
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
     - body:
         size: body-copy
@@ -179,7 +185,8 @@ typography:
         name: Body Copy
         description: Article body copy only
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 400'
           font-weight: 400
     - pica:
         size: pica
@@ -187,7 +194,8 @@ typography:
         name: Pica
         description: links, titles & headlines
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
     - pica-strong:
         size: pica
@@ -195,7 +203,8 @@ typography:
         name: Pica Strong
         description: links, titles & headlines
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 400'
           font-weight: 400
     - long-primer:
         size: long-primer
@@ -203,7 +212,8 @@ typography:
         name: Long Primer
         description: ...
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
     - brevier:
         size: brevier
@@ -211,7 +221,8 @@ typography:
         name: Brevier
         description: ...
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
     - brevier-strong:
         size: brevier
@@ -219,31 +230,44 @@ typography:
         name: Brevier Strong
         description: ...
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
-          font-weight: 400
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 700'
+          font-weight: 700
     - minion:
         size: minion
         cssClass: minion
         name: Minion
         descriptio: ...
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 300'
           font-weight: 300
+    - minion-medium:
+        size: minion
+        cssClass: minion-medium
+        name: Minion Medium
+        description: ...
+        properties:
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 500'
+          font-weight: 500
     - minion-strong:
         size: minion
         cssClass: minion-strong
         name: Minion Strong
         description: ...
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
-          font-weight: 400
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 700'
+          font-weight: 700
     - button:
         size: minion
         cssClass: button-text
         name: Button Text
         description: ...
         properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-variation-settings: '"wght" 700'
           font-weight: 700
           letter-spacing: 1px;
           text-transform: uppercase;

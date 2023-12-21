@@ -3,7 +3,7 @@
 import React, { useEffect, useState, FunctionComponent as RFC } from 'react'
 
 import { useMatchMedia } from '@/hooks'
-import { typefaceSize } from '@/app/styleguide/styleguide.module.scss'
+import { typefaceSize } from './typesize.module.scss'
 
 type TObject = {
   [key: string]: string

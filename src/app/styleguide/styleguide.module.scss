@@ -12,25 +12,23 @@
   }
 
   > thead > tr > td {
-    background-color: var(--color-lightgray-10);
+    background-color: var(--color-lightgray-20);
   }
   > tbody > tr > td {
+    background-color: var(--color-lightgray-10);
   }
 }
 
-.typefaceName {
+.typeface-name {
   margin: 0 0 0.8rem 0;
 }
-.typefaceSize {
-  margin: 0 0 1.8rem 0;
-}
 
-.typefaceSample {
+.typeface-sample {
   margin: 0 0 3rem;
 }
 
-.typefaceLegend {
-  margin: 0 0 8rem;
+.typeface-legend {
+  margin: 0 0 2rem;
 }
 
 .grid {
