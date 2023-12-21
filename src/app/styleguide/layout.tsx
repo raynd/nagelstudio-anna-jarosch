@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         <Header />
         <Container>
-          <h1 className="headline-t2">Styleguide</h1>
+          <h1 className="canon">Styleguide</h1>
           <Navigation />
         </Container>
         <Container>{children}</Container>

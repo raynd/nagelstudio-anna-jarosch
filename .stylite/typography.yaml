@@ -2,160 +2,166 @@ typography:
   root: 62.5%
   base: 1.6rem
   typeSizes:
-    small:
+    minion:
       vps:
         size: 1.2rem
-        line-height: 1.92rem
+        line-height: 1.6rem
       vpm:
         size: 1.2rem
-        line-height: 1.92rem
+        line-height: 1.6rem
       vpl:
-        size: 1.2rem
-        line-height: 1.92rem
+        size: 1.3rem
+        line-height: 1.6rem
       vpxl:
-        size: 1.2rem
-        line-height: 1.92rem
-    default:
+        size: 1.4rem
+        line-height: 1.6rem
+    brevier:
       vps:
-        size: 1.6rem
-        line-height: 2.56rem
+        size: 1.4rem
+        line-height: 1.6rem
+      vpm:
+        size: 1.4rem
+        line-height: 1.8rem
+      vpl:
+        size: 1.4rem
+        line-height: 1.8rem
+      vpxl:
+        size: 1.4rem
+        line-height: 1.8rem
+    pica:
+      vps:
+        size: 1.5rem
+        line-height: 2rem
       vpm:
         size: 1.6rem
-        line-height: 2.56rem
-      vpl:
-        size: 1.6rem
-        line-height: 2.56rem
-      vpxl:
-        size: 1.6rem
-        line-height: 2.56rem
-    large:
-      vps:
-        size: 1.8rem
-        line-height: 2.56rem
-      vpm:
-        size: 1.8rem
-        line-height: 2.56rem
+        line-height: 2rem
       vpl:
         size: 1.8rem
-        line-height: 2.56rem
+        line-height: 2.2rem
       vpxl:
         size: 1.8rem
-        line-height: 2.56rem
-    t1:
+        line-height: 2.2rem
+    body:
       vps:
-        size: 3rem
+        size: 1.5rem
         line-height: 4.05rem
       vpm:
-        size: 4rem
-        line-height: 5.4rem
+        size: 1.6rem
+        line-height: 2.2rem
       vpl:
-        size: 6.4rem
-        line-height: 8.64rem
+        size: 1.8rem
+        line-height: 2.4rem
       vpxl:
-        size: 6.4rem
-        line-height: 8.64rem
-    t2:
+        size: 1.8rem
+        line-height: 2.4rem
+    great-primer:
+      vps:
+        size: 1.8rem
+        line-height: 2.2rem
+      vpm:
+        size: 1.8rem
+        line-height: 2.2rem
+      vpl:
+        size: 2.1rem
+        line-height: 2.4rem
+      vpxl:
+        size: 2.1rem
+        line-height: 2.4rem
+    paragon:
+      vps:
+        size: 2rem
+        line-height: 2.4rem
+      vpm:
+        size: 2.2rem
+        line-height: 2.6rem
+      vpl:
+        size: 2.8rem
+        line-height: 3.2rem
+      vpxl:
+        size: 2.8rem
+        line-height: 3.2rem
+    canon:
       vps:
         size: 2.8rem
-        line-height: 3.78rem
+        line-height: 3.2rem
       vpm:
-        size: 3.4rem
-        line-height: 4.59rem
-      vpl:
-        size: 3.8rem
-        line-height: 5.13rem
-      vpxl:
-        size: 3.8rem
-        line-height: 5.13rem
-    t3:
-      vps:
-        size: 2.8rem
-        line-height: 3.78rem
-      vpm:
-        size: 2.8rem
-        line-height: 3.78rem
-      vpl:
         size: 3.2rem
-        line-height: 4.32rem
-      vpxl:
-        size: 3.2rem
-        line-height: 4.32rem
-    button:
-      vps:
-        size: 1.2rem
-        line-height: 1.62rem
-      vpm:
-        size: 1.2rem
-        line-height: 1.62rem
+        line-height: 3.6rem
       vpl:
-        size: 1.2rem
-        line-height: 1.62rem
+        size: 5.2rem
+        line-height: 5.6rem
       vpxl:
-        size: 1.2rem
-        line-height: 1.62rem
+        size: 5.2rem
+        line-height: 5.6rem
   typeFaces:
-    - headline-t1:
-        size: t1
-        cssClass: headline-t1
+    - minion:
+        size: minion
+        cssClass: minion
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 300
-    - headline-t2:
-        size: t2
-        cssClass: headline-t2
+    - minion-strong:
+        size: minion
+        cssClass: minion-strong
+        properties:
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-weight: 400
+    - brevier:
+        size: brevier
+        cssClass: brevier
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 300
-    - headline-t3:
-        size: t3
-        cssClass: headline-t3
+    - brevier-strong:
+        size: brevier
+        cssClass: brevier-strong
+        properties:
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-weight: 400
+    - pica:
+        size: pica
+        cssClass: pica
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 300
-    - large:
-        size: large
-        cssClass: large
+    - pica-strong:
+        size: pica
+        cssClass: pica-strong
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 400
-    - large-strong:
-        size: large
-        cssClass: large-strong
+    - body:
+        size: body
+        cssClass: body
+        properties:
+          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
+          font-weight: 400
+    - body-strong:
+        size: body
+        cssClass: body-strong
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
           font-weight: 700
-    - default:
-        size: default
-        cssClass: default
+    - great-primer:
+        size: great-primer
+        cssClass: great-primer
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
-          font-weight: 400
-    - default-strong:
-        size: default
-        cssClass: default-strong
+          font-weight: 300
+    - paragon:
+        size: paragon
+        cssClass: paragon
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
-          font-weight: 700
-    - default-italic:
-        size: default
-        cssClass: default-italic
-        properties:
-          font-family: ['Open Sans Italic', 'Helvetica', 'Arial', 'sans-serif']
-          font-weight: 400
-    - small:
-        size: small
-        cssClass: small
+          font-weight: 300
+    - canon:
+        size: canon
+        cssClass: canon
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
-          font-weight: 400
-    - small-strong:
-        size: small
-        cssClass: small-strong
-        properties:
-          font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
-          font-weight: 700
+          font-weight: 300
     - button:
-        size: button
+        size: minion
         cssClass: button-text
         properties:
           font-family: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']

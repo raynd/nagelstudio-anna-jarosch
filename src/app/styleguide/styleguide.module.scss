@@ -1,0 +1,30 @@
+.table {
+  table-layout: fixed;
+  width: 400px;
+  border-collapse: collapse;
+  border: 1px solid var(--color-darkgray-10);
+
+  th,
+  td {
+    padding: 3px 5px;
+  }
+
+  > thead > tr > td {
+    background-color: var(--color-lightgray-20);
+  }
+  > tbody > tr > td {
+    background-color: var(--color-lightgray-10);
+  }
+}
+
+.typefaceName {
+  margin: 1rem 0 2rem;
+}
+
+.typefaceSample {
+  margin: 0 0 3rem;
+}
+
+.typefaceLegend {
+  margin: 0 0 8rem;
+}

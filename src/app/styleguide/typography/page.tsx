@@ -1,4 +1,10 @@
 import { getStyleguideDataTypography } from '@/app/utils'
+import {
+  table,
+  typefaceName,
+  typefaceSample,
+  typefaceLegend,
+} from '../styleguide.module.scss'
 
 type TObject = {
   [key: string]: string
@@ -24,38 +30,38 @@ export default async function Styleguide() {
 
         return (
           <div key={index}>
-            <p className="default-strong">{key}</p>
-            <table>
+            <p className={`pica-strong ${typefaceName}`}>{key}</p>
+            <p className={`${typefaceSample} ${cssClass}`}>
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+            </p>
+            <table className={`${table} ${typefaceLegend}`}>
               <thead>
                 <tr>
                   <td>
-                    <span className="small">name</span>
+                    <span className="minion">name</span>
                   </td>
                   <td>
-                    <span className="small">className</span>
+                    <span className="minion">className</span>
                   </td>
                   <td>
-                    <span className="small">size</span>
+                    <span className="minion">size</span>
                   </td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>
-                    <span className="small-strong">{key}</span>
+                    <span className="minion-strong">{key}</span>
                   </td>
                   <td>
-                    <span className="small-strong">{cssClass}</span>
+                    <span className="minion-strong">{cssClass}</span>
                   </td>
                   <td>
-                    <span className="small-strong">{size}</span>
+                    <span className="minion-strong">{size}</span>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <p className={cssClass}>
-              ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
-            </p>
           </div>
         )
       })}
