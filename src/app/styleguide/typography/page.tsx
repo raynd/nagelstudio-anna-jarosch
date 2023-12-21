@@ -1,8 +1,8 @@
 import { getStyleguideDataTypography } from '@/app/utils'
+import { TypeSize } from '@/app/components/Styleguide'
 import {
   table,
   typefaceName,
-  typefaceSize,
   typefaceSample,
   typefaceLegend,
   grid,
@@ -34,7 +34,7 @@ export default async function Styleguide() {
           <div key={index} className={grid}>
             <div>
               <p className={`brevier-strong ${typefaceName}`}>{name}</p>
-              <p className={`${cssClass} ${typefaceSize}`}>45/23</p>
+              <TypeSize cssClass={cssClass} />
 
               <table className={`${table} ${typefaceLegend}`}>
                 <thead>

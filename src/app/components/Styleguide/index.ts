@@ -1,3 +1,4 @@
+import TypeSize from './TypeSize'
 import Navigation from './Navigation'
 
-export { Navigation }
+export { Navigation, TypeSize }

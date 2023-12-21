@@ -4,6 +4,13 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.ya?ml$/,
+      use: 'yaml-loader',
+    })
+    return config
+  },
   sassOptions: {
     importer: yamlImporter,
     includePaths: [

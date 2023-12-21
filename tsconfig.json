@@ -34,6 +34,7 @@
 
     /* Aliases */
     "paths": {
+      "@root/*": ["./*"],
       "@/*": ["./src/*"],
       "@/types/*": ["./src/types/*"],
       "@/components/*": ["./src/components/*"]
