@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body>
+      <body suppressHydrationWarning={true}>
         <Header />
         <Container>
           <h1 className="canon">Styleguide</h1>

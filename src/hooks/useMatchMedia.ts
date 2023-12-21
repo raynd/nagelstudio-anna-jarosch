@@ -1,8 +1,7 @@
-import file from '@root/.stylite/breakpoints.yaml'
 import { useEffect, useCallback, useState } from 'react'
 import { useMediaQueries } from '.'
 
-const viewportBreakpoints = Object.entries(file.breakpoints)
+import file from '@root/.stylite/breakpoints.yaml'
 
 type ObjType = {
   [key: string]: string
@@ -12,7 +11,10 @@ type MediaQueriesType = {
   [key: string]: ObjType
 }
 
-export function useMatchMedia(args: string[]): string {
+const viewportBreakpoints = Object.entries(file.breakpoints)
+const regEx = /(\d+px)/gm
+
+export function useMatchMedia(): string {
   const [matchViewport, setMatchViewport] = useState('')
   const mediaQueries: MediaQueriesType = useMediaQueries(viewportBreakpoints)
 
@@ -22,10 +24,11 @@ export function useMatchMedia(args: string[]): string {
   const handleChange = useCallback(
     (e) => {
       if (e.currentTarget.matches) {
-        const regEx = /(\d+px)/gm
         const matchedValue = e.currentTarget.media.match(regEx)
         const result: string | undefined = Object.keys(mediaQueries).find(
-          (item) => mediaQueries[item].min === matchedValue[0],
+          (item) =>
+            mediaQueries[item].min === matchedValue[0] ||
+            mediaQueries[item].max === matchedValue[0],
         )
         setMatchViewport(result ? result : '')
       }
@@ -34,20 +37,34 @@ export function useMatchMedia(args: string[]): string {
   )
 
   useEffect(() => {
-    Object.keys(mediaQueries).forEach((mq, i) => {
-      matchMediaList[i] = window.matchMedia(
-        `(min-width: ${mediaQueries[mq].min})`,
+    Object.keys(mediaQueries).forEach((mq) => {
+      matchMediaList.push(
+        window.matchMedia(`(min-width: ${mediaQueries[mq].min})`),
+      )
+      matchMediaList.push(
+        window.matchMedia(`(max-width: ${mediaQueries[mq].max})`),
       )
     })
 
-    matchMediaList.map((entry, i) => {
+    matchMediaList.forEach((mq) => {
+      if (mq.matches && mq.media.includes('min')) {
+        const lastMatches = mq.media.match(regEx)
+        const currentViewport = Object.keys(mediaQueries).find(
+          (item) => mediaQueries[item].min === lastMatches[0],
+        )
+
+        if (currentViewport) setMatchViewport(currentViewport)
+      }
+    })
+
+    matchMediaList.map((entry) => {
       return entry.addEventListener('change', handleChange)
     })
 
     return () => {
-      matchMediaList.map((entry, i) => {
-        return entry.removeEventListener('change', handleChange)
-      })
+      matchMediaList.map((entry) =>
+        entry.removeEventListener('change', handleChange),
+      )
     }
   }, [mediaQueries, matchMediaList, handleChange])
 

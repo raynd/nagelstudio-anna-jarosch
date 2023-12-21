@@ -1,20 +1,50 @@
 'use client'
 
-import React, { useEffect, FunctionComponent as RFC } from 'react'
+import React, { useEffect, useState, FunctionComponent as RFC } from 'react'
 
 import { useMatchMedia } from '@/hooks'
 import { typefaceSize } from '@/app/styleguide/styleguide.module.scss'
 
-type TypeSizeType = {
-  cssClass: string
+type TObject = {
+  [key: string]: string
 }
 
-export const TypeSize: RFC<TypeSizeType> = ({ cssClass }) => {
+type TData = {
+  [key: string]: TObject
+}
+
+type TypeSizeType = {
+  cssClass: string
+  data: TData[]
+  typefaceKey: string
+}
+
+export const TypeSize: RFC<TypeSizeType> = ({
+  cssClass,
+  data,
+  typefaceKey,
+}) => {
+  const [valueSize, setValueSize] = useState('')
+  const [valueLineHeight, setValueLineHeight] = useState('')
   const viewport = useMatchMedia()
 
   useEffect(() => {
-    console.log(viewport)
-  }, [viewport])
+    const typeface = data.find((item) => Object.keys(item)[0] === typefaceKey)
 
-  return <p className={`${cssClass} ${typefaceSize}`}>56/64</p>
+    if (!typeface || !viewport.length) return
+
+    const properties = typeface[typefaceKey]
+
+    setValueSize(() => properties.sizes[viewport].size.replace(/rem/, ''))
+    setValueLineHeight(() =>
+      properties.sizes[viewport]['line-height'].replace(/rem/, ''),
+    )
+  }, [viewport, data, typefaceKey])
+
+  return (
+    <p className={`${cssClass} ${typefaceSize}`}>
+      <span>{valueSize}/</span>
+      <span>{valueLineHeight}</span>
+    </p>
+  )
 }

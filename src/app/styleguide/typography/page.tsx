@@ -34,7 +34,7 @@ export default async function Styleguide() {
           <div key={index} className={grid}>
             <div>
               <p className={`brevier-strong ${typefaceName}`}>{name}</p>
-              <TypeSize cssClass={cssClass} />
+              <TypeSize cssClass={cssClass} data={data} typefaceKey={key} />
 
               <table className={`${table} ${typefaceLegend}`}>
                 <thead>
@@ -64,6 +64,8 @@ export default async function Styleguide() {
                   </tr>
                 </tbody>
               </table>
+              <p className={`brevier-strong`}>Description</p>
+              <p className={`body-copy`}>{description}</p>
             </div>
             <div>
               <p className={`brevier-strong ${typefaceName}`}>&nbsp;</p>
