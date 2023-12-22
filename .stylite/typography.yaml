@@ -139,7 +139,7 @@ typography:
         name: Canon
         description: Hero or page title
         properties:
-          font-family: ['OpenSans', 'Helvetica', 'Arial', 'sans-serif']
+          font-family: ['PoiretOne', 'Helvetica', 'Arial', 'sans-serif']
           font-variation-settings: '"wght" 300'
           font-weight: 300
 
